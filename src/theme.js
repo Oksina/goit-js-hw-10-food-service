@@ -25,14 +25,15 @@ function changeTheme(e) {
         localStorage.setItem('theme', Theme.DARK);
     }
     else {
-        repleaceTheme();
+        repleaceThemeLight();
         localStorage.setItem('theme', Theme.LIGHT);
     }
 }
 
 const repleaceTheme = () => {
     ref.body.classList.toggle(Theme.DARK);
-    ref.body.classList.toggle(Theme.LIGHT);
     }
-
+const repleaceThemeLight = () => {
+    ref.body.classList.toggle(Theme.LIGHT);
+}
 ref.switch.addEventListener('change', changeTheme);
