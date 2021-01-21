@@ -31,7 +31,7 @@ function changeTheme(e) {
 }
 
 const repleaceTheme = () => {
-    ref.body.classList.toggle(Theme.DARK);
+    ref.body.classList.toggle(Theme);
     }
 
 ref.switch.addEventListener('change', changeTheme);
