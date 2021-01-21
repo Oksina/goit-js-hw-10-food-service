@@ -21,7 +21,7 @@ else {
 
 function changeTheme(e) {
     if (e.target.checked) {
-        repleaceTheme();
+        repleaceThemeDark();
         localStorage.setItem('theme', Theme.DARK);
     }
     else {
@@ -30,7 +30,7 @@ function changeTheme(e) {
     }
 }
 
-const repleaceTheme = () => {
+const repleaceThemeDark = () => {
     ref.body.classList.toggle(Theme.DARK);
     }
 const repleaceThemeLight = () => {
