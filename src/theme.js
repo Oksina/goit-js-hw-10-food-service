@@ -19,18 +19,17 @@ if (themeLocalStorage === Theme.DARK) {
 
 function changeTheme(e) {
   if (e.target.checked) {
-    repleaceThemeDark();
+    replaceTheme();
     localStorage.setItem('theme', Theme.DARK);
   } else {
-    repleaceThemeLight();
+    replaceTheme();
     localStorage.setItem('theme', Theme.LIGHT);
   }
 }
 
-const repleaceThemeDark = () => {
+function replaceTheme() {
   ref.body.classList.toggle(Theme.DARK);
-};
-const repleaceThemeLight = () => {
   ref.body.classList.toggle(Theme.LIGHT);
-};
+}
+
 ref.switch.addEventListener('change', changeTheme);
